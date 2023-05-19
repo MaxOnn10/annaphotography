@@ -111,9 +111,9 @@ function pages() {
         .pipe(include({
             includePaths: 'app/',
         }))
-        // .pipe(typograf({
-        //     locale: ['ru', 'en-US', 'uk']
-        // }))
+        .pipe(typograf({
+            locale: ['ru', 'en-US', 'uk']
+        }))
         .pipe(dest('app'))
         .pipe(browserSync.stream())
 }
