@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script defer src="js/inputmask.min.js"></script>
+  <script defer src="js/just-validate.min.js"></script>
+  <script defer src="js/main.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header class="header header__contact">
+    <a class="header__logo" href="#">
+      <img src="" alt="logo">
+    </a>
+    <div class="header__burger-container">
+      <button class="header__burger" aria-label="burger-menu">
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-menu">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="">About Myself</a>
+        </li>
+        <li class="header__menu-item">
+          <p class="header__menu-link" href="">Stories</p>
+          <ul class="header__nav-submenu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Family</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Wedding</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Love story</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Events</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="">Prices</a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <form action="#" class="form" method="POST" enctype="multipart/form-data">
+            <div class="form__item">
+              <label class="form__label">
+                <input class="input input-name" type="text" data-validate-field="name" name="Имя"
+                  placeholder="Введите имя">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input class="input input-mail" type="email" data-validate-field="email" name="Email"
+                  placeholder="Введите email">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
+                  placeholder="Введите телефон">
+              </label>
+            </div>
+            <div class="form__item">
+              <label class="form__label">
+                <textarea class="textarea" name="Сообщение" id="" placeholder="Enter your message"></textarea>
+              </label>
+            </div>
+            <div class="form__item">
+
+            </div>
+            <div class="form__item">
+
+            </div>
+
+
+
+            <input class="input" type="file" name="file[]" multiple id="myfile">
+            <button class="button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="css/libs.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/just-validate.min.js"></script>
+    <script defer src="js/main.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 
     <style>
@@ -46,29 +54,106 @@
                         <li class="header__menu-item">
                             <a class="header__menu-link" href="">Events</a>
                         </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="">Individual</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="header__menu-item">
                     <a class="header__menu-link" href="">Prices</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="">Contact</a>
+                    <a class="header__menu-link" href="contact.html">Contact</a>
                 </li>
             </ul>
+            <div id="dialog-content" class="header__modal modal" style="display:none;max-width:1200px;">
+
+            </div>
+            <button class="header__nav-book" data-fancybox data-src="#dialog-content">
+                Book your date
+            </button>
         </nav>
     </header>
     <main>
-        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio velit explicabo autem. Quasi accusantium
-            quod cupiditate, beatae aliquid, maxime tempore voluptas mollitia aspernatur iure quidem molestias
-            blanditiis hic ipsum. Ducimus?
-            Voluptates excepturi animi praesentium. Beatae neque tempore quis assumenda rerum facere fugiat cum. Dolorum
-            aut similique esse ea minima sint inventore, eius reprehenderit quidem quia eos ratione eaque maiores.
-            Rerum!
+        <section class="intro">
+            <p class="intro__top">It is so beautiful to be happy</p>
+            <p class="intro__description">My religion of photography is the sincere story of your glances, touches,
+                kisses and gentle whispers.</p>
+        </section>
+
+        <section class="work">
+            <div class="work__case work__case-1 work__case-full">
+                <a class="work__case-link" href="">
+                    <img class="work__case-img" src="images/wedding/marta-jenya/bg.jpg" alt="" style="object-position: 50% 40%;">
+                </a>
+                <div class="work__case-subtitle">Marta &<br>Jenya</div>
+            </div>
+            <div class="work__wrapper">
+                <div class="work__case work__case-part work__case-2">
+                    <a class="work__case-link" href="">
+                        <img class="work__case-img" src="images/wedding/maryana-lubchik/bg.jpg" alt="">
+                    </a>
+                    <div class="work__case-subtitle">Maryana &<br>Lubchik</div>
+                </div>
+                <div class="work__case work__case-part work__case-3">
+                    <a class="work__case-link" href="">
+                        <img class="work__case-img" src="images/wedding/natalie-josh/bg.jpg" alt="">
+                    </a>
+                    <div class="work__case-subtitle">Natalie &<br>Josh</div>
+                </div>
+            </div>
+              <div class="work__case work__case-half work__case-4">
+                <div class="work__case-image-container">
+                    <a class="work__case-link" href="">
+                        <img class="work__case-img" src="images/wedding/medics/bg.jpg" alt="">
+                    </a>
+                    <div class="work__case-subtitle">She &<br>He</div>
+                </div>
+            </div>
+            <div class="work__case work__case-5 work__case-full">
+                <a class="work__case-link" href="">
+                    <img class="work__case-img" src="images/wedding/medics/bg.jpg" alt="">
+                </a>
+                <div class="work__case-subtitle">She &<br>He</div>
+            </div>
+
+            <!-- <div class="work__case work__case-5">
+                <a href="">
+                    <img class="work__case-img work__case-img--full" src="images/wedding/marta-jenya/bg.jpg" alt="" >
+                </a>
+                <div class="work__case-subtitle">Marta &#38;<br>Jenya</div>
+            </div> -->
         </section>
     </main>
-    <footer>footer</footer>
-    <script src="js/main.min.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col">
+                    <a class="footer__email" href="mailto:annakyrytsia.photographer@gmail.com">annakyrytsia.photographer@gmail.com</a>
+                </div>
+                <div class="footer__col">
+                    <p class="footer__copyright">©
+                        <span class="footer__year">2023</span>
+                        Anna Kyrytsia
+                    </p>
+                </div>
+                <div class="footer__col">
+                    <ul class="footer__socials">
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://www.instagram.com/photo.in.desire/" target="_blank">
+                                <img class="footer__socials-icon" src="images/socials/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__socials-item">
+                            <a class="footer__socials-link" href="https://www.facebook.com/photo.in.desire" target="_blank">
+                                <img class="footer__socials-icon" src="images/socials/instagram.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 
 </html>
