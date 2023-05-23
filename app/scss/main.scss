@@ -12,6 +12,10 @@
     background: url("../images/bg.webp");
     background-repeat: no-repeat;
     background-position: center center;
+    &__logo-img{
+        position: fixed;
+        z-index: 10;
+    }
     &__burger-container {
         position: fixed;
         top: 0;
