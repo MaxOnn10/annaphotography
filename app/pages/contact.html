@@ -28,7 +28,7 @@
 <body>
   <header class="header header__contact">
     <a class="header__logo" href="#">
-      <img src="" alt="logo">
+      <img class="header__logo-img" src="images/logo.webp" width="100" height="100" alt="logo">
     </a>
     <div class="header__burger-container">
       <button class="header__burger" aria-label="burger-menu">
@@ -55,6 +55,9 @@
             <li class="header__menu-item">
               <a class="header__menu-link" href="">Events</a>
             </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="">Individual</a>
+            </li>
           </ul>
         </li>
         <li class="header__menu-item">
@@ -69,48 +72,131 @@
 
   <main>
     <section class="contact">
-      <div class="container">
-        <div class="contact__wrapper">
+      <div class="contact__grid">
+        <div class="contact__column">
+          <img class="contact__img" src="images/contact.webp" alt="">
+        </div>
+        <div class="contact__column">
           <form action="#" class="form" method="POST" enctype="multipart/form-data">
-            <div class="form__item">
-              <label class="form__label">
-                <input class="input input-name" type="text" data-validate-field="name" name="Имя"
-                  placeholder="Введите имя">
-              </label>
+            <div class="form__item form__item-half">
+              <label class="form__label"></label>
+              <input class="input form__field input-name" type="text" data-validate-field="name" name="Имя"
+                placeholder="Your First Name">
+            </div>
+            <div class="form__item form__item-half">
+              <label class="form__label"></label>
+              <input class="input form__field input-lastname" type="text" data-validate-field="last" name="Фамилия"
+                placeholder="Your Last Name">
+            </div>
+            <div class="form__item form__item-half">
+              <label class="form__label"></label>
+              <input class="input form__field input-name" type="text" data-validate-field="name" name="Имя"
+                placeholder="Your S/O First Name">
+            </div>
+            <div class="form__item form__item-half">
+              <label class="form__label"></label>
+              <input class="input form__field input-lastname" type="text" data-validate-field="lastname" name="Фамилия"
+                placeholder="Your S/O Last Name">
             </div>
             <div class="form__item">
-              <label class="form__label">
-                <input class="input input-mail" type="email" data-validate-field="email" name="Email"
-                  placeholder="Введите email">
-              </label>
+              <label class="form__label"></label>
+              <input class="input form__field input-mail" type="email" data-validate-field="email" name="Email"
+                placeholder="Email">
             </div>
             <div class="form__item">
-              <label class="form__label">
-                <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
-                  placeholder="Введите телефон">
-              </label>
+              <label class="form__label"></label>
+              <input class="input form__field input-tel" type="tel" data-validate-field="tel" name="Телефон"
+                placeholder="Phone">
             </div>
             <div class="form__item">
-              <label class="form__label">
-                <textarea class="textarea" name="Сообщение" id="" placeholder="Enter your message"></textarea>
-              </label>
+              <label class="form__label"></label>
+              <input class="input form__field input-date" type="date" name="Date" placeholder="Event Day">
             </div>
             <div class="form__item">
+              <label class="form__label">What type of session are you interested in?</label>
+              <select class="input input-select form__field" aria-label="Dropdown"  name="Session" id="">
+                <option value="Wedding">Wedding</option>
+                <option value="Engagement">Engagement</option>
+                <option value="Proposal">Proposal</option>
+                <option value="Family">Family</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Maternity">Maternity</option>
+                <option value="Event">Event</option>
+                <option value="Individual">Individual</option>
+                <option value="Other/unsure">Other/unsure</option>
+              </select>
+            </div>
+            <div class="form__item">
+              <input class="input form__field" type="text" data-validate-field="location" name="Location"
+                placeholder="Venue name or session location">
+            </div>
+            <div class="form__item">
+              <input class="input form__field" type="text" data-validate-field="hear" name="hear"
+                placeholder="How did you hear about me?">
+            </div>
+            <div class="form__item">
+              <input class="input form__field" type="text" data-validate-field="guests" name="Location"
+                placeholder="How many guests will be attending the event?">
+            </div>
+            <div class="form__item">
+              <label class="form__label"></label>
+              <textarea class="textarea" name="story" id="" placeholder="How did you two meet? Tell me your love story!"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label"></label>
+              <textarea class="textarea" name="Сообщение" id="" placeholder="Place in the world you desire to visit?"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label"></label>
+              <textarea class="textarea" name="Сообщение" id="" placeholder="Family tradition that you cherish"></textarea>
+            </div>
+            <div class="form__item">
+              <label class="form__label"></label>
+              <textarea class="textarea" name="Сообщение" id="" placeholder="Anything else you'd like to add, or to ask me?"></textarea>
+            </div>
 
-            </div>
-            <div class="form__item">
-
-            </div>
 
 
 
-            <input class="input" type="file" name="file[]" multiple id="myfile">
-            <button class="button">Отправить</button>
+            <!-- <input class="input" type="file" name="file[]" multiple id="myfile"> -->
+            <button class="button">Send</button>
           </form>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__col">
+          <a class="footer__email"
+            href="mailto:annakyrytsia.photographer@gmail.com">annakyrytsia.photographer@gmail.com</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__copyright">&#169;
+            <span class="footer__year">2023</span>
+            Anna Kyrytsia
+          </p>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__socials">
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="https://www.instagram.com/photo.in.desire/" target="_blank">
+                <img class="footer__socials-icon" src="images/socials/facebook.svg" alt="">
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a class="footer__socials-link" href="https://www.facebook.com/photo.in.desire" target="_blank">
+                <img class="footer__socials-icon" src="images/socials/instagram.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>
