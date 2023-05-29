@@ -13,6 +13,14 @@
             line-height: 40px;
         }
     }
+    .about{
+        &__title{
+            padding-top: 0;
+        }
+        &__img{
+            height: auto;
+        }
+    }
     .footer {
         padding: 25px 0 25px 0;
         &__wrapper {
@@ -38,12 +46,21 @@
             height: 90px;
         }
     }
+    .about {
+        &__grid {
+            grid-template-columns: repeat(8, 1fr);
+            row-gap: 40px;
+        }
+        &__column {
+            grid-column: 8 span;
+        }
+    }   
     .contact {
         &__grid {
             grid-template-columns: repeat(8, 1fr);
             row-gap: 40px;
         }
-        &__column{
+        &__column {
             grid-column: 8 span;
         }
     }
