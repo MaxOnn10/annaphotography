@@ -7,11 +7,13 @@
 .header {
     position: relative;
     overflow-x: hidden;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
-    background: url("../images/bg.webp");
+    background: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
+    background-position: top;
     &__logo-img {
         position: fixed;
         z-index: 10;
@@ -234,9 +236,6 @@
             display: block;
             overflow: hidden;
         }
-        .work__case-img {
-            // height: inherit;
-        }
     }
     &__case-part {
         .work__case-img {
@@ -261,18 +260,20 @@
         //     background-size: 100% auto;
         //     position: relative;
         // }
+        .work__case-subtitle{
+            bottom: 4px;
+        }
         .work__case-image-container {
             position: relative;
-            max-width: 960px;
+            max-width: 1140px;
             display: block;
             margin-bottom: 30px;
-            margin-left: auto;
+            margin: auto;
         }
         .work__case-link {
             position: relative;
             display: block;
             overflow: hidden;
-            height: 450px;
         }
         .work__case-img {
             height: inherit;
@@ -349,11 +350,13 @@
 .about {
     padding-top: 100px;
     &__title {
+        color: var(--black);
         font-family: "BlackMango";
         font-size: 36px;
         line-height: 38px;
         padding-top: 200px;
         margin-bottom: 15px;
+        letter-spacing: 2px;
     }
     &__subtitle {
         font-family: "BlackMango";
@@ -384,6 +387,102 @@
     }
 }
 
+.gallery{
+    padding: 100px 15px 0 15px;
+    &__title {
+        font-family: "BlackMango";
+        font-size: 36px;
+        line-height: 38px;
+        letter-spacing: normal;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        text-transform: uppercase;
+    }
+    &__description{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 20px;
+        text-align: center;
+        color: var(--white);
+        border-radius: 15px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    &__case {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__case-subtitle{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: initial;
+        width: 120px;
+        height: 120px;
+        background-color: #e8e8e8;
+        color: #a6a8ab;
+        font-size: 9px;
+        line-height: 150%;
+        letter-spacing: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    &__case-link{
+        display: block;
+        height: 85vh;
+    }
+    &__case-img {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+    &__case-full {
+        .work__case-link {
+            height: 100vh;
+            margin-bottom: 30px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+    }
+    &__case-part {
+        .work__case-img {
+            width: 100%;
+            object-fit: cover;
+            height: inherit;
+        }
+        .work__case-link {
+            height: 50vh;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+    }
+    &__case-half {
+        .work__case-subtitle{
+            bottom: 5px;
+        }
+        .work__case-image-container {
+            position: relative;
+            max-width: 1140px;
+            display: block;
+            margin-bottom: 30px;
+            margin: auto;
+        }
+        .work__case-link {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .work__case-img {
+            height: inherit;
+        }
+    }
+}
+
 .footer {
     padding: 50px 0;
     font-size: 14px;
@@ -393,9 +492,6 @@
         justify-content: space-between;
         width: fit-content;
         gap: 25px;
-    }
-    &__footer__email {
-        // display: inline;
     }
     &__wrapper {
         display: grid;

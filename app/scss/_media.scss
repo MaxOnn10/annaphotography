@@ -7,17 +7,24 @@
             width: 90%;
         }
     }
+    .work {
+        &__case-half {
+            .work__case-subtitle {
+                bottom: 4px;
+            }
+        }
+    }
     .redirect {
         &__link {
             font-size: 38px;
             line-height: 40px;
         }
     }
-    .about{
-        &__title{
+    .about {
+        &__title {
             padding-top: 0;
         }
-        &__img{
+        &__img {
             height: auto;
         }
     }
@@ -45,6 +52,21 @@
             width: 90px;
             height: 90px;
         }
+        &__case-half {
+            .work__case-subtitle {
+                bottom: 3px;
+            }
+        }
+    }
+    .gallery {
+        &__case-link {
+            height: inherit;
+        }
+        &__case-subtitle {
+            width: 90px;
+            height: 90px;
+            bottom: 4px;
+        }
     }
     .about {
         &__grid {
@@ -54,7 +76,7 @@
         &__column {
             grid-column: 8 span;
         }
-    }   
+    }
     .contact {
         &__grid {
             grid-template-columns: repeat(8, 1fr);
@@ -62,6 +84,9 @@
         }
         &__column {
             grid-column: 8 span;
+        }
+        &__img{
+            height: auto;
         }
     }
 }
@@ -104,12 +129,20 @@
             .work__case-link {
                 height: 50vh;
             }
+            .work__case-subtitle {
+                bottom: 0;
+            }
         }
     }
     .redirect {
         &__link {
             font-size: 28px;
             line-height: 32px;
+        }
+    }
+    .events{
+        .gallery__case-subtitle{
+            font-size: 6px;
         }
     }
 }
