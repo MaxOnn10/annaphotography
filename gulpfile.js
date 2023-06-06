@@ -107,7 +107,7 @@ function fonts() {
 }
 
 function pages() {
-    return src('app/pages/*.html')
+    return src('app/pages/**/*.html')
         .pipe(include({
             includePaths: 'app/',
         }))

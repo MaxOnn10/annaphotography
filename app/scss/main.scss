@@ -191,6 +191,44 @@
         height: auto;
         background: none;
     }
+    &__gallery {
+        background: url("../images/wedding/natalie-josh/main.jpg");
+        position: relative;
+        overflow-x: hidden;
+        max-width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-position: top;
+    }
+    &__name {
+        color: var(--white);
+        font-size: 75px;
+        line-height: 120%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.description {
+    padding: 80px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        // font-family: "BlackMango";
+        font-size: 50px;
+        line-height: 120%;
+        font-style: italic;
+        margin-bottom: 25px;
+    }
+    &__text {
+    }
 }
 
 .intro {
@@ -260,7 +298,7 @@
         //     background-size: 100% auto;
         //     position: relative;
         // }
-        .work__case-subtitle{
+        .work__case-subtitle {
             bottom: 4px;
         }
         .work__case-image-container {
@@ -374,7 +412,7 @@
     &__column {
         grid-column: 6 span;
     }
-    &__text{
+    &__text {
         font-size: 18px;
         line-height: 24px;
         text-indent: 10px;
@@ -387,7 +425,7 @@
     }
 }
 
-.gallery{
+.gallery {
     padding: 100px 15px 0 15px;
     &__title {
         font-family: "BlackMango";
@@ -398,7 +436,7 @@
         padding-left: 10px;
         text-transform: uppercase;
     }
-    &__description{
+    &__description {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 20px 20px;
         text-align: center;
@@ -408,12 +446,12 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
-    
+
     &__case {
         position: relative;
         margin-bottom: 30px;
     }
-    &__case-subtitle{
+    &__case-subtitle {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -430,7 +468,7 @@
         justify-content: center;
         text-transform: uppercase;
     }
-    &__case-link{
+    &__case-link {
         display: block;
         height: 85vh;
     }
@@ -462,7 +500,7 @@
         }
     }
     &__case-half {
-        .work__case-subtitle{
+        .work__case-subtitle {
             bottom: 5px;
         }
         .work__case-image-container {
@@ -480,6 +518,158 @@
         .work__case-img {
             height: inherit;
         }
+    }
+}
+
+.photos {
+    &__wrapper-half {
+        // display: flex;
+        // height: auto;
+        // column-gap: 5px;
+        // grid-template-columns: repeat(12, 1fr);
+        // padding: 0 15px;
+        // margin: 0 auto;
+        display: flex;
+        gap: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        .photos__item {
+            // grid-column: 6 span;
+            width: 50%;
+        }
+        .photos__item-link{
+            height: 100%;
+        }
+        .photos__item-img{
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+    &__wrapper-two {
+        max-width: 66.66%;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        margin-bottom: 5px;
+        .photos__item-link {
+            height: 100%;
+        }
+        .photos__item {
+            width: 48.5%;
+            &:not(:last-child) {
+                margin-right: 3%;
+            }
+        }
+        .photos__item-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+    &__container-triple{
+        padding-top: 20px;
+    }
+    &__wrapper-triple {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 5px;
+        gap: 2.5px;
+    }
+    &__wrapper-triple--center {
+        // display: grid;
+        // justify-items: center;
+        // align-items: center;
+        // column-gap: 5px;
+        // grid-template-columns: repeat(12, 1fr);
+        // padding: 0 15px;
+        // margin: 0 auto;
+        // max-width: 70%;
+        max-width: 66.66%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 5px;
+        .photos__item-link {
+            height: 100%;
+        }
+        .photos__item {
+            // grid-column: 4 span;
+            width: 31.8888%;
+        }
+        .photos__item:not(:last-child) {
+            margin-right: 2.16666%;
+        }
+        .photos__item-img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+    &__wrapper-triple--small {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 25px;
+        .photos__item-link {
+            height: 100%;
+        }
+        .photos__item {
+            // grid-column: 4 span;
+            width: 31.8888%;
+        }
+        .photos__item:not(:last-child) {
+            margin-right: 2.16666%;
+        }
+        .photos__item-img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+    &__wrapper-triple--height {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 5px;
+        .photos__item-link {
+            height: 100%;
+        }
+        .photos__item {
+            // grid-column: 4 span;
+            width: 31.8888%;
+        }
+        .photos__item:not(:last-child) {
+            margin-right: 2.16666%;
+        }
+        .photos__item-img {
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+    &__case__half {
+        .photos__item-item {
+            grid-column: 6 span;
+        }
+    }
+    &__item-part {
+        width: 66.6%;
+        margin: 0 auto;
+    }
+    &__item-img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    &__item-half {
+        grid-column: 6 span;
     }
 }
 
