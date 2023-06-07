@@ -71,16 +71,16 @@ function scripts() {
 
 function images() {
     return src(['app/images/src/*.*', '!app/images/src/*.svg'])
-        .pipe(newer('app/images'))
-        .pipe(avif({ quality: 90 }))
+        // .pipe(newer('app/images'))
+        // .pipe(avif({ quality: 90 }))
 
         .pipe(src('app/images/src/*.*'))
         .pipe(newer('app/images'))
         .pipe(webp())
 
-        .pipe(src('app/images/src/*.*'))
-        .pipe(newer('app/images'))
-        .pipe(imagemin())
+        // .pipe(src('app/images/src/*.*'))
+        // .pipe(newer('app/images'))
+        // .pipe(imagemin())
 
         .pipe(dest('app/images'));
 }
