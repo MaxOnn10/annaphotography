@@ -6,6 +6,10 @@
         &__nav-book {
             width: 90%;
         }
+        &__name{
+            font-size: 56px;
+            line-height: 60px;
+        }
     }
     .work {
         &__case-half {
@@ -26,6 +30,17 @@
         }
         &__img {
             height: auto;
+        }
+    }
+    .photos{
+        &__wrapper-triple--center{
+            max-width: 100%;
+        }
+        &__item-part{
+            width: 85%;
+        }
+        &__wrapper-two{
+            max-width: 100%;
         }
     }
     .footer {

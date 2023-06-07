@@ -1,20 +1,24 @@
 const burgerMenu = document.querySelector('.header__burger');
 const burgerContainer = document.querySelector('.header__burger-container');
 const nav = document.querySelector('.header__nav')
-const photo = document.querySelector('.photos__item-img')
+// const photo = document.querySelector('.photo')
 burgerMenu.addEventListener('click', () => {
     burgerMenu.classList.toggle('header__burger-active');
     burgerContainer.classList.toggle('header__burger-container--active');
     nav.classList.toggle('header__nav-active');
 });
 
-photo.oncontextmenu = function(){
-    return false;
-}
+ //download-lock
+const photos = document.querySelectorAll('.photo');
+photos.forEach(photo => {
+    photo.addEventListener('contextmenu', (event) => {
+        event.preventDefault();
+    });
+});
 
 Fancybox.bind("[data-fancybox]", {
     // Your custom options
-  });
+});
 
 // Fancybox.show([{ src: "#dialog-content", type: "inline" }]);
 // Fancybox.bind("[data-fancybox]", {
