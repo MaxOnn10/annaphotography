@@ -125,6 +125,11 @@
             font-size: 28px;
             line-height: 32px;
         }
+        &:hover {
+            visibility: visible;
+            opacity: 1;
+            transform: rotateX(0deg);
+        }
     }
     &__nav-book {
         position: absolute;
@@ -211,8 +216,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
 }
-
+.submenu-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
 .description {
     padding: 80px 15px;
     display: flex;
@@ -228,7 +238,7 @@
     }
 }
 
-.fancybox-image{
+.fancybox-image {
     pointer-events: none;
 }
 
@@ -398,7 +408,6 @@
         letter-spacing: 2px;
     }
     &__subtitle {
-        font-family: "BlackMango";
         font-size: 24px;
         line-height: 26px;
         margin-bottom: 30px;
@@ -427,15 +436,15 @@
 }
 
 .gallery {
-    padding: 100px 15px 0 15px;
+    padding: 110px 15px 0 15px;
     &__title {
-        font-family: "BlackMango";
+        // font-family: "BlackMango";
         font-size: 36px;
         line-height: 38px;
         letter-spacing: normal;
         margin-bottom: 15px;
         padding-left: 10px;
-        text-transform: uppercase;
+        // text-transform: uppercase;
     }
     &__description {
         background-color: rgba(0, 0, 0, 0.5);
@@ -729,7 +738,7 @@
         border: none;
         border-bottom: 1px solid #5c5c5c;
         width: 100%;
-        height: 140px;
+        height: 100px;
         color: var(--black);
         background-color: transparent;
         resize: none;
