@@ -34,17 +34,6 @@ photos.forEach(photo => {
     });
 });
 
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-});
-
-// Fancybox.show([{ src: "#dialog-content", type: "inline" }]);
-// Fancybox.bind("[data-fancybox]", {
-//     autoFocus: false,
-//     dragToClose: false,
-//     groupAttr: false
-// });
-
 // inputmask
 // const form = document.querySelector('.form');
 // const telSelector = form.querySelector('input[type="tel"]');

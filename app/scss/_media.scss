@@ -108,6 +108,9 @@
 
 @media (max-width: 639.98px) {
     .header {
+        .video{
+            height: 92vh;
+        }
         &__nav {
             width: 65%;
         }
@@ -147,6 +150,11 @@
             .work__case-subtitle {
                 bottom: 0;
             }
+        }
+    }
+    .stories{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
     }
     .redirect {
