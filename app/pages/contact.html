@@ -11,8 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
 
-  <script defer src="js/inputmask.min.js"></script>
-  <script defer src="js/just-validate.min.js"></script>
+  
+  <!-- <script defer src="js/contact.js"></script> -->
   <script defer src="js/main.min.js"></script>
 
   <link rel="stylesheet" href="css/libs.min.css">
@@ -72,26 +72,26 @@
           <img class="contact__img" src="images/contact.webp" alt="">
         </div>
         <div class="contact__column">
-          <form action="#" class="form" method="POST" enctype="multipart/form-data">
+          <form action="mail.php" class="form" method="POST" enctype="multipart/form-data">
             <div class="form__item form__item-half">
               <label class="form__label"></label>
-              <input class="input form__field input-name" type="text" data-validate-field="name" name="Имя"
+              <input class="input form__field input-name" type="text" data-validate-field="name" name="Name1"
                 placeholder="Your First Name">
             </div>
             <div class="form__item form__item-half">
               <label class="form__label"></label>
-              <input class="input form__field input-lastname" type="text" data-validate-field="last" name="Фамилия"
+              <input class="input form__field input-lastname" type="text" data-validate-field="last" name="LastName1"
                 placeholder="Your Last Name">
             </div>
             <div class="form__item form__item-half">
               <label class="form__label"></label>
-              <input class="input form__field input-name" type="text" data-validate-field="name" name="Имя"
+              <input class="input form__field input-name--2" type="text" data-validate-field="name" name="Name2"
                 placeholder="Your S/O First Name">
             </div>
             <div class="form__item form__item-half">
               <label class="form__label"></label>
-              <input class="input form__field input-lastname" type="text" data-validate-field="lastname" name="Фамилия"
-                placeholder="Your S/O Last Name">
+              <input class="input form__field input-lastname--2" type="text" data-validate-field="lastname"
+                name="LastName2" placeholder="Your S/O Last Name">
             </div>
             <div class="form__item">
               <label class="form__label"></label>
@@ -100,15 +100,15 @@
             </div>
             <div class="form__item">
               <label class="form__label"></label>
-              <input class="input form__field input-tel" type="tel" data-validate-field="tel" name="Телефон"
+              <input class="input form__field input-tel" type="tel" data-validate-field="tel" name="Phone"
                 placeholder="Phone">
             </div>
             <div class="form__item">
-              <label class="form__label"></label>
+              <label class="form__label">Event Date</label>
               <input class="input form__field input-date" type="date" name="Date" placeholder="Event Day">
             </div>
             <div class="form__item">
-              <label class="form__label">What type of session are you interested in?</label>
+              <label class="form__label">What type of session are you interested in?</label>
               <select class="input input-select form__field" aria-label="Dropdown" name="Session" id="">
                 <option value="Wedding">Wedding</option>
                 <option value="Engagement">Engagement</option>
@@ -122,40 +122,37 @@
               </select>
             </div>
             <div class="form__item">
-              <input class="input form__field" type="text" data-validate-field="location" name="Location"
+              <input class="input input-location form__field" type="text" data-validate-field="location" name="Location"
                 placeholder="Venue name or session location">
             </div>
             <div class="form__item">
-              <input class="input form__field" type="text" data-validate-field="hear" name="hear"
+              <input class="input input-hear form__field" type="text" data-validate-field="hear" name="Hear about me"
                 placeholder="How did you hear about me?">
             </div>
             <div class="form__item">
-              <input class="input form__field" type="text" data-validate-field="guests" name="Location"
+              <input class="input input-guests form__field" type="text" data-validate-field="guests" name="Location"
                 placeholder="How many guests will be attending the event?">
             </div>
             <div class="form__item">
               <label class="form__label"></label>
-              <textarea class="textarea" name="story" id=""
+              <textarea class="textarea textarea-story" name="Your story" id=""
                 placeholder="How did you two meet? Tell me your love story!"></textarea>
             </div>
             <div class="form__item">
               <label class="form__label"></label>
-              <textarea class="textarea" name="Сообщение" id=""
+              <textarea class="textarea textarea-place" name="Place to visit" id=""
                 placeholder="Place in the world you desire to visit?"></textarea>
             </div>
             <div class="form__item">
               <label class="form__label"></label>
-              <textarea class="textarea" name="Сообщение" id=""
+              <textarea class="textarea textarea-tradition" name="Family tradition" id=""
                 placeholder="Family tradition that you cherish"></textarea>
             </div>
             <div class="form__item">
               <label class="form__label"></label>
-              <textarea class="textarea" name="Сообщение" id=""
+              <textarea class="textarea textarea-ask" name="Ask me" id=""
                 placeholder="Anything else you'd like to add, or to ask me?"></textarea>
             </div>
-
-
-
 
             <!-- <input class="input" type="file" name="file[]" multiple id="myfile"> -->
             <button class="button">Send</button>
@@ -173,7 +170,7 @@
             href="mailto:annakyrytsia.photographer@gmail.com">annakyrytsia.photographer@gmail.com</a>
         </div>
         <div class="footer__col">
-          <p class="footer__copyright">&#169;
+          <p class="footer__copyright">©
             <span class="footer__year">2023</span>
             Anna Kyrytsia
           </p>
@@ -195,6 +192,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/contact.js"></script>
 
 </body>
 

@@ -22,15 +22,15 @@
         text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
-        &:hover{
+        &:hover {
             background-color: rgb(166, 168, 171);
         }
     }
-    .video{
+    .video {
         width: 100%;
         height: 100vh;
     }
-    .video-container{
+    .video-container {
         display: none;
         width: 100%;
         height: 100vh;
@@ -48,7 +48,7 @@
     }
     #video-container {
         display: none;
-      }
+    }
 
     position: relative;
     overflow-x: hidden;
@@ -90,7 +90,9 @@
             width: 18px;
             height: 2px;
             background-color: currentColor;
-            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            transition:
+                transform 0.3s ease-in-out,
+                top 0.3s ease-in-out;
         }
         &::before {
             top: 20px;
@@ -107,13 +109,17 @@
         &::before {
             transform: rotate(45deg);
             top: 50%;
-            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            transition:
+                transform 0.3s ease-in-out,
+                top 0.3s ease-in-out;
         }
 
         &::after {
             transform: rotate(-45deg);
             top: 50%;
-            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            transition:
+                transform 0.3s ease-in-out,
+                top 0.3s ease-in-out;
         }
     }
     &__burger-line {
@@ -132,7 +138,7 @@
         right: -250px;
         top: 0;
         height: 100vh;
-        background-color: #696f71;
+        background-color: rgba(105, 111, 113, 0.75);
         max-width: 100%;
         // width: 450px;
         width: 30%;
@@ -159,7 +165,7 @@
         position: absolute;
         top: -10px;
         left: -224px;
-        background-color: #696f71;
+        background-color: rgba(105, 111, 113, 0.75);
         padding: 20px;
         transform-origin: 0 0;
         transform: rotateX(-90deg);
@@ -241,7 +247,6 @@
         background: none;
     }
     &__gallery {
-        background: url("../images/wedding/natalie-josh/main.webp");
         position: relative;
         overflow-x: hidden;
         max-width: 100%;
@@ -278,6 +283,10 @@
         font-size: 50px;
         line-height: 120%;
         margin-bottom: 25px;
+    }
+    &__text{
+        text-align: center;
+        line-height: 150%;
     }
 }
 
@@ -390,10 +399,10 @@
     }
 }
 
-.stories{
+.stories {
     padding-top: 30px;
     border-top: 1px solid #000;
-    &__wrapper{
+    &__wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         justify-items: center;
@@ -640,9 +649,30 @@
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         margin-bottom: 5px;
         gap: 2.5px;
+        .photos__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photos__item-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        .photos__item-img {
+            object-fit: cover;
+            height: 100%;
+            width: auto;
+        }
+        .photos__item {
+            // width: 33.333%;
+        }
     }
     &__wrapper-triple--center {
         // display: grid;
@@ -811,7 +841,9 @@
         line-height: 120%;
         color: var(--black);
         background-color: var(--white);
-        transition: color 0.3s, background-color 0.3s;
+        transition:
+            color 0.3s,
+            background-color 0.3s;
         user-select: none;
         width: 200px;
         // border: none;
